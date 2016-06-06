@@ -1,0 +1,685 @@
+1. Select all correct declarations, or declaration and initializations of an
+array? 
+A) String str[]; 
+B) String str[5] = new String[5]; 
+C) String str[]=new String [] {"string1", "string 2", "string3", "string4",
+"string5"}; 
+D) String str[]= {"string1","string2", "string3", "string4", "string5"}; 
+
+2. Which of the following are the java keywords? 
+A) final 
+B) Abstract 
+C) Long 
+D) static 
+
+3. The synchronized is used in which of the following? 
+A) Class declarations. 
+B) Method declarations. 
+C) Block of code declarations 
+D) Variable declarations. 
+
+4. What will be printed when you execute the code? 
+class A { 
+A() { 
+System.out.println("Class A Constructor"); 
+} 
+} 
+public class B extends A { 
+B() { 
+System.out.println("Class B Constructor"); 
+} 
+public static void main(String args[]) { 
+B b = new B(); 
+} 
+} 
+A) "Class A Constructor" followed by "Class B Constructor" 
+B) "Class B Constructor" followed by "Class A Constructor" 
+C) Compile time error 
+D) Run time error 
+
+
+5. Given the piece of code, select the correct to replace at the comment line? 
+class A { 
+A(int i) { } 
+} 
+public class B extends A { 
+B() { 
+// xxxxx 
+} 
+public static void main(String args[]) { 
+B b = new B(); 
+} 
+} 
+A) super(100); 
+B) this(100); 
+C) super(); 
+D) this(); 
+
+
+6. Which of the statements are true? 
+A) Overridden methods have the same method name and signature 
+B) Overloaded methods have the same method name and signature 
+C) Overridden methods have the same method name and different signature 
+D) Overloaded methods have the same method name and different signature 
+
+7. What is the output when you execute the following code? 
+int i = 100; 
+switch (i) { 
+case 100: 
+System.out.println(i); 
+case 200: 
+System.out.println(i); 
+case 300: 
+System.out.println(i); 
+} 
+A) Nothing is printed 
+B) Compile time error 
+C) The values 100,100,100 printed 
+D) Only 100 is printed 
+
+
+8. How can you change the break statement below so that it breaks out of the
+inner and middle loops and continues with the next iteration of the outer loop? 
+outer: for ( int x =0; x < 3; x++ ) { 
+middle: for ( int y=0; y < 3; y++ ) { 
+if ( y == 1) { 
+break; 
+} 
+} 
+} 
+A) break inner: 
+B) break middle: 
+C) break outer: 
+D) continue 
+E) continue middle 
+
+
+9. What is the result of compiling the following code? 
+import java.io.*; 
+class MyExp { 
+void MyMethod() throws IOException, EOFException { 
+//............// 
+} 
+} 
+class MyExp1 extends MyExp { 
+void MyMethod() { 
+//..........// 
+} 
+} 
+public class MyExp2 extends MyExp1 { 
+void MyMethod() throws IOException { 
+//.........// 
+} 
+} 
+A) Compile time error 
+B) No compile time error 
+C) Run-Time error 
+D) MyMethod() cannot throw an exception in MyExp2 class 
+Answer 9: 
+
+10. What is the result when you compile the and run the following code? 
+public class ThrowsDemo { 
+static void throwMethod() { 
+System.out.println("Inside throwMethod."); 
+throw new IllegalAccessException("demo"); 
+} 
+public static void main(String args[]) { 
+try { 
+throwMethod(); 
+} catch (IllegalAccessException e) { 
+System.out.println("Caught " + e); 
+} 
+} 
+} 
+A) Compilation error 
+B) Runtime error 
+C) Compile successfully, nothing is printed. 
+D) inside demoMethod. followed by caught: java.lang.IllegalAccessExcption: demo 
+Answer 10: 
+
+11. Which statements about garbage collection are true? 
+A) The garbage collector runs in low memory situations 
+B) You can run the garbage collector when ever you want. 
+C) When it runs, it releases the memory allocated by an object. 
+D) Garbage collector immediately runs when you set the references to null. 
+Answer 11: 
+
+12. From the following code how many objects are garbage collected? 
+String string1 = "Test"; 
+String string2 = "Today"; 
+string1 = null; 
+string1 = string2; 
+A) 1 
+B) 2 
+C) 3 
+D) 0 
+Answer 12: 
+
+13. Select all correct list of keywords? 
+A) superclass 
+B) goto 
+C) open 
+D) integer 
+E) import, package 
+F) They are all java keywords 
+Answer 13: 
+
+14. Select the correct form for anonymous inner class declaration ? 
+A) new Outer.new Inner 
+B) new Inner() { 
+C) new Inner() 
+D) Outer.new Inner() 
+Answer 14: 
+
+15. Which of the following statements are true? 
+A) An anonymous class cannot have any constructors 
+B) An anonymous class can only be created within the body of a method 
+C) An anonymous class can only access static fields of the enclosing class 
+D) An anonymous class instantiated and declared in the same place. 
+Answer 15: 
+
+16. Which of the following class definitions are legal declaration of an
+abstract class? 
+A) class A { abstract void Method() {} } 
+B) abstract class A { abstract void Method() ; } 
+C) class A { abstract void Method() {System.out.println("Test");} } 
+D) class abstract A { abstract void Method() {} } 
+Answer 16: 
+
+17. What is the result of compiling the following code? 
+public class Test { 
+public static void main ( String[] args) { 
+int value; 
+value = value + 1; 
+System.out.println(" The value is : " + value); 
+} 
+} 
+A) Compile and runs with no output 
+B) Compiles and runs printing out "The value is 1" 
+C) Does not compile 
+D) Compiles but generates run time error 
+Answer 17: 
+
+18. What is the result of compiling the following code? When you run like given
+below? 
+java Test Hello How Are You 
+public class Test { 
+public static void main ( String[] args) { 
+for ( int i = 0; i < args.length; i++) 
+System.out.print(args[i]); 
+} 
+} 
+A) Compile and runs with no output 
+B) Compiles and runs printing out "HelloHowAreYou" 
+C) Does not compile 
+D) Compiles but generates run time error 
+Answer 18: 
+
+19. Which are the following are java keywords ? 
+A) goto 
+B) synchronized 
+C) extends 
+D) implements 
+E) this 
+F) NULL 
+Answer 19: 
+
+20. What is the output of the following code? 
+public class TestLocal { 
+public static void main(String args[]) { 
+String s[] = new String[6]; 
+System.out.print(s[6]); 
+} 
+} 
+A) A null is printed 
+B) Compile time error 
+C) Exception is thrown 
+D) null followed by 0 is printed on the screen 
+Answer 20: 
+
+21. Which of the following assignment statements is invalid? 
+A) long l = 698.65; 
+B) float f = 55.8; 
+C) double d = 0x45876; 
+D) All of the above 
+Answer 21: 
+
+22. What is the numeric range for a Java int data type? 
+A) 0 to (2^32) 
+B) -(2^31) to (2^31) 
+C) -(2^31) to (2^31 - 1) 
+D) -(2^15) to (2^15 - 1) 
+Answer 22: 
+
+23. How to represent number 7 as hexadecimal literal? 
+----------- 
+Answer 23: 
+
+24. ------- is the range of the char data type? 
+Answer 24: 
+
+25. Which of the following method returns the ID of an event? 
+A) int getID() 
+B) String getSource() 
+C) int returnID() 
+D) int eventID() 
+Answer 25: 
+
+26. Which of the following are correct, if you compile the following code? 
+public class CloseWindow extends Frame implements WindowListener { 
+public CloseWindow() { 
+addWindowListener(this); // This is listener registration 
+setSize(300, 300); 
+setVisible(true); 
+} 
+public void windowClosing(WindowEvent e) { 
+System.exit(0); 
+} 
+public static void main(String args[]) { 
+CloseWindow CW = new CloseWindow(); 
+} 
+} 
+A) Compile time error 
+B) Run time error 
+C) Code compiles but Frames does not listen to WindowEvents 
+D) Compile and runs successfully. 
+Answer 26: 
+
+27. What is correct about event handling in Java? 
+A) Java 1.0 event handling is compatible with event delegation model in Java
+1.1 
+B) Java 1.0 and Java 1.1 event handling models are not compatible 
+C) Event listeners are the objects that implements listener interfaces. 
+D) You can add multiple listeners to any event source, then there is no
+guarantee that the listeners will be notified in the order in which they were
+added. 
+Answer 27: 
+
+28. Given the byte with a value of 01110111, which of the following statements
+will produce 00111011? 
+A) 0x77 << 1; 
+B) 0x77 >>> 1; 
+C) 0x77 >> 1; 
+D) None of the above 
+Answer 28: 
+
+29. Which of the following will compile without error? 
+A) char c = 'a'; 
+B) double d = 45.6; 
+C) int i = d; 
+D) int k = 8; 
+Answer 29: 
+
+30. Which of the following returns true when replace with XXXXXXXXX? 
+public class TestType { 
+public static void main(String args[] ) { 
+Button b = new Button("BUTTON"); 
+if( XXXXXXXXX) { 
+System.out.print("This is an instance of Button"); 
+} 
+} 
+} 
+
+A) b instanceof Button 
+B) Button instanceof b 
+C) b == Button 
+D) Button == (Object) b 
+Answer 30: 
+
+31. The statement X %= 5, can best described as? 
+A) A equals a divided by 5; 
+B) A equals A in 5 digit percentage form 
+C) A equals A modulus 5. 
+D) None of the above 
+Answer 31: 
+
+32. What will happen when you attempt to compile and run the following code? 
+public class MyClass { 
+public static void main(String args[]) { 
+String s1 = new String("Test One"); 
+String s2 = new String("Test One"); 
+if ( s1== s2 ) { 
+System.out.println("Both are equal"); 
+} 
+Boolean b = new Boolean(true); 
+Boolean b1 = new Boolean(false); 
+if ( b.equals(b1) ) { 
+System.out.println("These wrappers are equal"); 
+} 
+} 
+} 
+A) Compile time error 
+B) Runtime error. 
+C) No output 
+D) "These wrappers are equal" 
+Answer 32: 
+
+33. What is the result when you try to compile the following code? 
+public class TestBit { 
+public static void main(String args[]) { 
+String s = "HelloWorld"; 
+if ((s != null) && (s.length() > 6)) 
+System.out.println("The value of s is " + s ); 
+} 
+} 
+A) Compile time error 
+B) Runtime error 
+C) No output is printed 
+D) "The value of s is HelloWorld" is printed on the screen 
+Answer 33: 
+
+34. Given the following declaration which of the following statements equals to
+true 
+boolean b1 = true; 
+boolean b2 = false; 
+A) b1 == b2; 
+B) b1 || b2; 
+C) b1 |& b2; 
+D) b1 && b2; 
+Answer 34: 
+
+35. What is the result of the following code? 
+public class MyTest { 
+int x = 30; 
+public static void main(String args[]) { 
+int x = 20; 
+MyTest ta = new MyTest(); 
+ta.Method(x); 
+System.out.println("The x value is " + x); 
+} 
+void Method(int y){ 
+int x = y * y; 
+} 
+} 
+A) The x value is 20. 
+B) The x value is 30. 
+C) The x value is 400. 
+D) The x value is 600. 
+Answer 35: 
+
+36. How can you implement encapsulation. 
+A) By making methods private and variable private 
+B) By making methods are public and variables as private 
+C) Make all variable are public and access them using methods 
+D) Making all methods and variables as protected. 
+Answer 36: 
+
+37. Given the following class definition, which of the following methods could
+be legally placed after the comment ? 
+public class Test{ 
+public void amethod(int i, String s){} 
+//Here 
+} 
+A) public void amethod(String s, int i){} 
+B) public int amethod(int i, String s){} 
+C) public void amethod(int i, String mystring){} 
+D) public void Amethod(int i, String s) {} 
+Answer 37: 
+
+38. Given the following class definition which of the following can be legally
+placed after the comment line? 
+class Base{ 
+public Base(int i){} 
+} 
+public class Derived extends Base{ 
+public static void main(String arg[]){ 
+Derived d = new Derived(10); 
+} 
+Derived(int i){ 
+super(i); 
+} 
+Derived(String s, int i){ 
+this(i); 
+//Here 
+} 
+} 
+A) Derived d = new Derived(); 
+B) super(); 
+C) this("Hello",10); 
+D) Base b = new Base(10); 
+Answer 38: 
+
+39. Which of the following statements are true? 
+A) An anonymous inner class cannot have any constructors 
+B) An anonymous inner class can created only inside a method. 
+C) An anonymous inner class can only access static fields of the enclosing
+class 
+D) An anonymous inner class can implement an interface 
+Answer 39: 
+
+40. What does the following code does? 
+public class R Thread implements Runnable { 
+public void run (String s ) { 
+System.out.println ("Executing Runnable Interface Thread"); 
+} 
+public static void main ( String args []) { 
+RThread rt = new RThread ( ); 
+Thread t = new Thread (rt); 
+t.start ( ); 
+} 
+} 
+A) The compiler error 
+B) The runtime error 
+C) Compiles and prints "Executing Runnable Interface Thread" on the screen 
+D) Compiles and does not print any thing on the screen 
+Answer 40: 
+
+41. Which statements are true? 
+A) Threads start() method automatically calls run() method . 
+B) Thread dies after the run() returns 
+C) A dead Thread can be started again. 
+D) A stop() method kills the currently running Thread 
+Answer 41: 
+
+42. The ThreadGroup class instance? 
+A) Allow threads to be manipulated as group 
+B) Provide support for ThreadDeath listeners 
+C) May contain other ThreadGroups 
+D) Must contain threads of the same type. 
+Answer 42: 
+
+43. Default Layout Managers are concerned ? 
+A) Frame's default Layout Manager is Border 
+B) Applet's is FlowLayout 
+C) Panel's is FlowLayout 
+D) A Dialog is a pop up window and used as BorderLayout as default. 
+Answer 43: 
+
+44. Which statements are true about GridBagLayout ? 
+A) Weight x and weight y should be 0.0 and 1.0 
+B) If fill is both, anchor does not make sense. 
+C) It divides its territory in to an array of cells. 
+D) While constructing GridBagLayout , you won't tell how many rows and columns
+the underlying grid has. 
+Answer 44: 
+
+45. Which of the following are true? 
+A) gridwidth, gridheight, specifies how many columns and rows to span. 
+B) gridx, gridy has GridBagConstraints.RELATIVE which adds left to right and
+top to bottom, still you can specify gridwidth and gridheight except for last
+component, which you have to set GridBagConstraints.REMAINDER. 
+Answer 45: 
+
+46. Which of the following statements are true about the fragment below? 
+import java.lang.Math; 
+public class Test { 
+public static void main(String args[]) { 
+Math m = new Math(); 
+System.out.println(m.abs(2.6); 
+} 
+} 
+A) Compiler fails at line 1 
+B) Compiler fails at line 2 
+C) Compiler fails at the time of Math class instantiation 
+D) Compiler succeeds. 
+Answer 46: 
+
+47. What will be the output of the following line? 
+public class TestFC { 
+public static void main(String args[]) { 
+System.out.println(Math.floor(145.1)); 
+System.out.println(Math.ceil(-145.4)); 
+} 
+} 
+A) 145.0 followed by -145.0 
+B) 150.0 followed by -150.0 
+C) 145.1 followed by -145.4 
+Answer 47: 
+
+48. Which of the following prints "Equal" 
+A) int a = 10; float f = 10; 
+if ( a = = f) { System.out.println("Equal");} 
+B) Integer i = new Integer(10); 
+Double d = new Double(10); 
+if ( i = =d) { System.out.println("Equal");} 
+C) Integer a = new Integer(10); 
+int b = 10; 
+if ( a = = b) { System.out.println("Equal");} 
+D) String a = new String("10"); 
+String b = new String("10"); 
+if ( a = = b) { System.out.println("Equal");} 
+Answer 48: 
+
+49. Which of the following implement clear notion of one item follows another
+(order)? 
+A) List 
+B) Set 
+C) Map 
+D) Iterator 
+Answer 49: 
+
+50. Collection interface iterator method returns Iterator(like Enumerator),
+through you can traverse a collection from start to finish and safely remove
+elements. 
+A) true 
+B) false 
+Answer 50: 
+
+51. Which of the following places no constraints on the type of elements, order
+of elements, or repetition of elements with in the collection.? 
+A) Collection 
+B) collection 
+C) Map 
+D) Set 
+Answer 51: 
+
+52. Which of the following gives Stack and Queue functionality.? 
+A) Map 
+B) Collection 
+C) List 
+D) Set 
+Answer 52: 
+
+53. If you run the following code on a PC from the directory c:\source: 
+import java.io.*; 
+class Path { 
+public static void main(String[] args) throws Exception { 
+File file = new File("Ran.test"); 
+System.out.println(file.getAbsolutePath()); 
+} 
+} 
+What do you expect the output to be? Select the one right answer. 
+A) Ran.test 
+B) source\Ran.test 
+C) c:\source\Ran.test 
+D) c:\source 
+E) null 
+Answer 53: 
+
+54. Which of the following will compile without error? 
+A) File f = new File("/","autoexec.bat"); 
+B) DataInputStream d = new DataInputStream(System.in); 
+C) OutputStreamWriter o = new OutputStreamWriter(System.out); 
+D) RandomAccessFile r = new RandomAccessFile("OutFile"); 
+Answer 54: 
+
+55. You have an 8-bit file using the character set defined by ISO 8859-8. You
+are writing an application to display this file in a TextArea. The local
+encoding is already set to 8859-8. How can you write a chunk of code to read
+the first line from this file? 
+You have three variables accessible to you: 
+myfile is the name of the file you want to read 
+stream is an InputStream object associated with this file 
+s is a String object 
+Select all valid answers. 
+A) 
+InputStreamReader reader = new InputStreamReader(stream, "8859-8"); 
+BufferedReader buffer = new BufferedReader(reader); 
+s = buffer.readLine(); 
+B) 
+InputStreamReader reader = new InputStreamReader(stream); 
+BufferedReader buffer = new BufferedReader(reader); 
+s = buffer.readLine(); 
+C) 
+InputStreamReader reader = new InputStreamReader(myfile, "8859-8"); 
+BufferedReader buffer = new BufferedReader(reader); 
+s = buffer.readLine(); 
+D) 
+InputStreamReader reader = new InputStreamReader(myfile); 
+BufferedReader buffer = new BufferedReader(reader); 
+s = buffer.readLine(); 
+E) 
+FileReader reader = new FileReader(myfile); 
+BufferedReader buffer = new BufferedReader(reader); 
+s = buffer.readLine(); 
+Answer 55: 
+
+56. Which of the following used to read and write to network sockets, which are
+super classes of Low level streams? 
+A) InputStream 
+B) StreamReaders 
+C) OutputStream 
+D) Writers 
+E) Readers 
+F) Streams 
+Answer 56: 
+
+57. Low Level Streams read input as bytes and writes as bytes, then select the
+correct declarations of Streams. 
+A) FileInputStream FIS = new FileInputStream("test.txt") 
+B) File file = new File("test.txt"); FileInputStream FIS = new
+FileInputStream(file) 
+C) File file = new File("c:\\"); File file1 = new File(file,"test.txt");
+FileOutputStream FOS = new FileOutputStream(file1); 
+D) FileInputStream FIS = new FileInputStream("c:\\","test.txt") 
+Answer 57: 
+
+58. Choose all valid forms of the argument list for the FileOutputStream
+constructor shown below: 
+A) FileOutputStream( FileDescriptor fd ) 
+B) FileOutputStream( String n, boolean a ) 
+C) FileOutputStream( boolean a ) 
+D) FileOutputStream() 
+E) FileOutputStream( File f ) 
+Answer 58: 
+
+59. What is the class that has "mode" argument such as "r" or "rw" is required
+in the constructor: 
+A) DataInputStream 
+B) InputStream 
+C) RandomAccessFile 
+D) File 
+Answer 59: 
+
+60. What is the output displayed by the following code? 
+import java.io.*; 
+public class TestIPApp { 
+public static void main(String args[]) { 
+RandomAccessFile file = new RandomAccessFile("test.txt", "rw"); 
+file.writeBoolean(true); 
+file.writeInt(123456); 
+file.writeInt(7890); 
+file.writeLong(1000000); 
+file.writeInt(777); 
+file.writeFloat(.0001f); 
+file.seek(5); 
+System.out.println(file.readInt()); 
+file.close(); 
+} 
+} 
+Select correct answer: 
+A) 123456 
+B) 7890 
+C) 1000000 
+D) .0001 
+Answer 60: 

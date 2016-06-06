@@ -1,0 +1,198 @@
+All are multiple choice questions.
+1) Question on Static Methods, whether they can be overloaded or not
+2) A java program on nested (inner) loops and it is asked what is the output of the program.
+3) Once a Servlet is initialized, how do you get the initialization parameters ?
+(a) Initialization parameters will not be stored
+(b) They will be stored in instance variables
+(c) using config.getInitParameters()
+ANS: I think answer is (c)
+
+4) A question on functionality of <forward> tag in JSP
+5) If the cookies are disabled, how can you maintain the Session.
+ANS: URL rewriting
+6) If there are strict timelines and if you want to get high performance for JSP to DB access, what method you suggest ?
+(a) Moving application server in to same manchine as Database
+(b) By storing results in Cache
+(c) By implementing Connection Pooling
+ANS: I think answer is (c)
+
+7) A question on MVC architecture and the functionality of Controller and View. 
+8) Question on Design Pattern. (I don't remember it)
+9) Which Design Pattern hides the complexities of all sub-systems ?
+(I don't remember the options and also don't know answer.)
+10) In CMP bean, which method executes only once in life time
+(a) setEntityContext()
+(b) create()
+(c) remove()
+(d) find() 
+ANS: I think answer is (b)
+11) Which bean can be called as Multi-Threaded bean ?
+(a) Entity beans
+(b) Stateless Session beans
+(c) Stateful Session beans
+(d) Pooled Stateless Session beans
+ANS: I think answer is (d)
+
+12) A question on Threads in Java, whether we need to mention the word "Daemon" explicitly to make a thread as Daemon.
+13) A question on Transactions of EJB. I think the question is something similar to - "Which is faster ?"
+(a) TRANSACTION_UNREPEATABLE_READ
+(b) TRANSACTION_REPEATABLE_READ
+(c) TRANSACTION_COMMIT_READ
+(d) TRANSACTION_UNCOMMIT_READ
+(I don't know answer and also I am not sure of options. but the options are something similar to this.)
+14) Question on EJB Home Object, Remote Object and what functionalities will be performed by each.
+15) What is the difference between Server and Container
+(a) A Container can have multiple Servers
+(b) A Server can have multiple Containers
+(c) A Server can have only one Container
+ANS: I think answer is (b)
+16) ejbStore() method is equivalent to
+(a) SELECT
+(b) INSERT
+(c) UPDATE
+(d) DELETE
+ANS: I think answer is (c)
+17) A question on where the garbage collection is done. I think the answer is : "finalize()" method
+18) A question properties of Primary key in Entity Beans (I don't remember the options exactly.)
+(a) Primary key consists of only basic data types in java
+(b) Primary key can contain composite data types
+
+
+
+
+
+1. Which of the following cannot be implemented  efficiently in Linear Linked List
+
+1. Quicksort
+2. Radix Sort
+3. Polynomials
+4. Insertion Sort
+5. Binary Search
+
+2. In binary search tree , n=nodes, h=height of tree. What's complexity?
+
+1. o(h)
+2. o(n*h)
+3. o(nLogn)
+4. o(n*n)
+5. None
+
+
+3. Printf("%d%d",i++,i++);
+
+1. Compiler Dependent
+2. 4 4
+3. 4 3
+4. 3 4
+5. None of Above
+
+4.  void main()
+{
+printf("persistent");
+main();
+}
+1. Till stack overflows 
+2. Infinite
+3. 65535
+4. 34423
+5. None
+
+5. If table A has m rows and table B has n rows then how many rows will the following query return
+
+SELECT A.A1,B.B1
+FROM A,B
+WHERE A.A3=B.B3
+1. <=(m*n)
+2. m*n
+3. <=(m+n)
+4. >=(m+n) and <=(m*n)
+5. m+n
+
+6. A Query optimizer optimizes according to which of Freshersworld.com the following criteria
+
+1. Execution time
+2. Disk access
+3. CPU usage
+4. Communication time
+5. None
+
+7. Which of the following is not a characteristic of a transaction
+
+1. Atomicity
+2. Consistency
+3. Normalization
+4. Isolation
+5. Durability
+
+8. The def. of Foreign key is there to support
+
+1. Referential integrity
+2. Constraint
+3. None
+
+9. Problem
+Process A Process B
+WRITELOCK(X) WRITELOCK(Y)
+READ(X) READ(Y)
+... ...
+1. The problem is serializable
+2. The problem is not serializable 
+3. It can be run in parallel
+4.  None 
+
+
+10. There was a question on automata ans – the resultant string will have even no of c
+
+6. CFG was given
+S -> 1 S 1
+S-> 0 S 0
+S -> 1 1
+S -> 0 0
+Find out the string
+
+11. One singly circular ordered list is there if M elements are to be inserted what will be the complexity of time
+
+a) O(M*N)
+b) O(M*(M+N))
+c) O ((M+N) * log(M+N))
+d)none of these
+
+12. find postfix and prefix of A + B * ( C + D ) / E + F
+
+13. Find out shortest path from A to B
+
+A B C D E
+A 0 m
+B m 0 2 2 m
+C 0 5
+D 0 6
+E 0
+
+14. From the following when 43 will not be found by binary search (a series was given with last element 43 in each)
+
+15. From 100 – 999 find the prob. Of getting 3 digit no with no 7 in any of its digit
+a) 18/25
+b) 10/25
+c) 729/1000
+d) none
+
+16. oid main()
+{
+for (a=1;a<=100;a++)
+for(b=a;b<=100;b++)
+foo();
+}
+foo()
+{ }
+how many times foo will be called.
+a) 5050
+b) 1010
+c)
+d)
+
+17. A hash table has a sie of 11 and data filled in its position like{3,5,7,9,6}how many comparisons have to be made if data is not found in the list in worst case
+
+a) 2
+b) 6
+c) 11
+d)
